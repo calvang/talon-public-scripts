@@ -27,27 +27,27 @@ cd back:
     insert("cd ..")
     key(enter)
 
-cd <user.text> [slash]:
+cd <user.format_text> [slash]:
     insert("cd ")
-    insert(user.text)
+    insert(format_text)
     key(enter)
 
 list:
     insert("ls ")
     #key(enter)
 
-list <user.text> [slash]:
+list <user.format_text> [slash]:
     insert("ls ")
-    insert(user.text)
+    insert(format_text)
     key(enter)
 
 list all:
     insert("ll")
     #key(enter)
 
-list all <user.text> [slash]:
+list all <user.format_text> [slash]:
     insert("ll ")
-    insert(user.text)
+    insert(format_text)
     key(enter)
 
 show path|where am i:
@@ -57,9 +57,9 @@ show path|where am i:
 make directory:
     insert("mkdir ")
 
-make directory <user.text>:
+make directory <user.format_text>:
     insert("mkdir ")
-    insert(user.text)
+    insert(user.format_text)
     key(enter)
 
 touch: insert("touch ")
@@ -85,9 +85,9 @@ code:
     insert("code .")
     key(enter)
 
-code <user.text>:
+code <user.format_text>:
     insert("code ")
-    insert(user.text)
+    insert(format_text)
     insert(" .")
     key(enter)
 
@@ -169,6 +169,3 @@ cd repositories:
 cd dot talon:
     insert("cd ~/.talon/user")
     key(enter)
-
-username:
-    insert("calvang")

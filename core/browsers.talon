@@ -24,3 +24,5 @@ search for <user.text>:
 inspect element: key(ctrl-shift-i)
 
 [open|new] incognito: key(ctrl-shift-n)
+
+toggle dark mode: key(alt-shift-d)

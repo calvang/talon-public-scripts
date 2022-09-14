@@ -1,10 +1,11 @@
 talon restart: 
     # app.notify("restarting talon")
-    key(alt-super-shift-t)
+    key(alt-super-r)
 
 talon quit: 
     key(alt-super-q)
 
+# break: skip()
 
 # put talon into sleep mode
 key(alt-shift-m): 
@@ -18,11 +19,11 @@ key(alt-shift-m):
 
 # mute talon while key is pressed
 key(alt-shift-t:down): 
-    # app.notify("muting")
+    app.notify("muting")
     speech.disable()
 
 key(alt-shift-t:up): 
-    # app.notify("unmuting")
+    app.notify("unmuting")
     speech.enable()
 
 # # mute talon while key is pressed
