@@ -17,14 +17,15 @@ key(alt-shift-m):
     speech.disable()
     user.engine_sleep()
 
-# mute talon while key is pressed
-key(alt-shift-t:down): 
-    app.notify("muting")
-    speech.disable()
+# toggle speech
+key(alt-shift-z): 
+    app.notify("toggling speech")
+    user.key_toggle_speech()
+  
 
-key(alt-shift-t:up): 
-    app.notify("unmuting")
-    speech.enable()
+# key(alt-shift-z:up): 
+#     app.notify("unmuting")
+#     speech.enable()
 
 # # mute talon while key is pressed
 # key(f8:down): 
